@@ -1,0 +1,15 @@
+In this project, California Inc, a construction company, is requesting the development of a model (program) to calculate the average housing prices in various regions of California for building new homes. The main purpose of this project is to apply and learn various Machine Learning algorithms.
+I used a Supervised Learning model, a Regression algorithm, and an Offline method to implement this project.
+Why Supervised Learning? Because our dataset contains labels, specifically the median housing price in each region, and we aim to predict these prices.
+Why Regression? Because "prediction" is addressed using regression algorithms.
+Why Offline? The data is provided to us once in advance, meaning there is no continuous data stream.
+To evaluate the accuracy of this project, I used methods like Root Mean Square Error (RMSE) and Mean Absolute Error (MAE).
+The first step I took was to analyze the data. I performed data analysis through visualization to gain
+insights.
+2. Data Preparation
+In this phase, I used the scikit-learn library to identify new features strongly correlated with housing prices based on the existing data.
+3. Applying Machine Learning Algorithms I used the prepared data to train the following Machine Learning algorithms:
+Linear Regression: RMSE = 72,701.33 and MAE = 225.61
+Decision Tree Regressor: RMSE = 72,480.20 and MAE = 210.25
+ Random Forest Regressor: RMSE = 49,795.88 and MAE = 179.27
+Using Cross-Validation, I evaluated all ML models. The results showed that the lowest RMSE was 65,583.70, and the lowest MAE was 12,121.47.
