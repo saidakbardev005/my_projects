@@ -1,0 +1,11 @@
+In this project, data provided by MohirDev LLC includes the number of advertisements placed in various media channels (TV, Radio, Newspaper) and the corresponding sales (Sales). My task is to determine which type of media advertising has the greatest impact on sales growth and to build a prediction model based on the identified relationship using the Simple Linear Regression algorithm.
+The main goal of this project is to identify the relationships between the data and to learn how to apply Simple Linear Regression algorithms.
+In this project:
+First, I examined the relationship between TV and Sales and built a prediction model. The resulting metrics were:
+MAE = 1.8305872641932412 and RMSE = 2.2842381438447106.
+Second, I examined the relationship between Radio and Sales and built a prediction model. The resulting metrics were:
+MAE = 4.229414682241112 and RMSE = 4.9380208046278655.
+Third, I examined the relationship between Newspaper and Sales and built a prediction model. The resulting metrics were:
+MAE = 4.3670510624236485 and RMSE = 5.204495431601131.
+From these results, it is evident that TV advertisements have the strongest impact on sales growth, while Radio advertisements have a moderate effect, and Newspaper advertisements have little to no significant impact.
+
