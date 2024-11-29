@@ -1,0 +1,27 @@
+Project: Semantic Segmentation for Self-Driving Cars
+Objective
+This project focuses on learning and implementing Semantic Segmentation, a technology critical for self-driving cars. Semantic Segmentation enables identifying different objects in an image and distinguishing them with unique colors. The primary goal of the project is to expand knowledge in Deep Learning and apply it to various real-world projects.
+Dataset
+The project uses a dataset from the research paper "Semantic object classes in video: A high-definition ground truth database." This dataset is specifically designed to detect objects in images and classify them into various categories.
+Libraries Used
+The following Python libraries were utilized in the project:
+1. torch: For building neural networks.
+2. fastai: To simplify image processing and model training.
+3. numpy: For mathematical computations.
+Processes
+1. Loading and Preparing Data:
+o The dataset was automatically downloaded and preprocessed.
+o A custom function (label_getter) was created to associate each image with its corresponding label file.
+2. Creating DataLoaders:
+o Images and their respective labels were loaded.
+o Data was split into small batches (batch size) to prepare it for the model training process.
+3. Building and Training the Model:
+o A U-Net architecture based on ResNet34 was employed.
+o The model was fine-tuned over 12 epochs to improve accuracy.
+4. Visualizing Results:
+o The model's predictions for segmentation were displayed with unique colors for each object.
+Results
+1. The model successfully identified and segmented different objects in images.
+2. Each object was distinctly highlighted with different colors, demonstrating the effectiveness of the Semantic Segmentation technology.
+3. The trained model can be tested on other real-world datasets and further enhanced for practical applications.
+
