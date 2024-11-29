@@ -1,0 +1,21 @@
+﻿Deep Learning-Based Pneumonia Detection Using Artificial Intelligence
+This project aims to develop an artificial intelligence algorithm to analyze chest X-ray images for detecting pneumonia. The system automatically identifies transparency in the lungs from X-ray images and classifies them into healthy or infected categories.The primary goal of the project is to utilize deep learning technologies to create an automated diagnostic system for medical use and address real-world problems by advancing these technologies.
+Technologies and Libraries Used
+The project was implemented in Python and utilized the following libraries:
+· pandas: For data manipulation and analysis.
+· fastai: A powerful library for building and training deep learning models.
+· ipywidgets: For creating interactive interfaces and visualizations.
+· os: For file management and data preparation.
+Dataset Information
+The dataset used in this project consists of chest X-ray images categorized into two main classes:
+1. Healthy Lungs: Images with no signs of pneumonia.
+2. Infected Lungs: Images with transparency in the lungs caused by pneumonia.
+Data Splitting and Preprocessing
+Data Splitting:
+The dataset was divided into training, validation, and test sets to ensure the robustness of the model.
+Data Preprocessing:
+The images were preprocessed and prepared for training by applying techniques such as resizing, normalization, and augmentation.
+Model and Results
+This project utilized Deep Learning techniques and achieved the following results:
+· Accuracy: 98.47%.
+This high accuracy demonstrates the effectiveness of the model in detecting pneumonia and its reliability for clinical application.
