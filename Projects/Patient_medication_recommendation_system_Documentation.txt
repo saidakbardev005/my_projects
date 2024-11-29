@@ -1,0 +1,49 @@
+﻿Drug Recommendation System Using Classification Algorithms
+The objective of this project is to study and implement classification algorithms to predict the most suitable drug for a patient. The project leverages data on patients suffering from the same disease and creates a model to recommend the appropriate drug. The problem is solved using multiclass classification.
+The model is built using Decision Tree and Random Forest algorithms.
+Dataset Description
+The dataset includes the following information:
+· Features: Patient characteristics such as age, gender, blood pressure, cholesterol levels, and other health indicators.
+· Outcome: The recommended drug type (drugA, drugB, drugC, drugX, or drugY).
+Libraries Used
+The following Python libraries and tools were utilized:
+1. numpy: For mathematical and statistical calculations.
+2. pandas: For data management and analysis.
+3. sklearn:
+o DecisionTreeClassifier and RandomForestClassifier: Classification algorithms.
+o LabelEncoder: For encoding categorical data into numeric format.
+o train_test_split: For splitting data into training and testing sets.
+o classification_report and confusion_matrix: For evaluating model performance.
+o cross_val_predict: For cross-validation-based predictions.
+4. seaborn and matplotlib: For visualization.
+1. Data Preprocessing
+· Categorical data was converted to numeric format using LabelEncoder.
+· Features were standardized (if necessary).
+· The data was split into 80% training and 20% testing sets.
+2. Model Development
+Decision Tree Classifier
+· The model was built using DecisionTreeClassifier.
+· The accuracy of the model on test data was 95%.
+· Cross-validation results were analyzed.
+Random Forest Classifier
+· The RandomForestClassifier algorithm was also implemented.
+· The model was evaluated using cross-validation, and the results were recorded.
+The model performance was evaluated using the following metrics:
+1. Precision: The percentage of correctly identified instances for each drug type.
+2. Recall: The proportion of correctly identified outcomes out of the actual occurrences.
+3. F1-Score: The harmonic mean of precision and recall.
+4. Accuracy: The overall proportion of correctly classified instances.
+Results
+1. Decision Tree
+· Accuracy: 98%
+· Classification Report:
+Drug TypePrecisionRecallF1-ScoreSupportdrugA0.921.000.9623drugB1.000.880.9316drugC1.001.001.0016drugX1.000.980.9954drugY0.991.000.99912. Random Forest
+· Accuracy: 94%
+· Classification Report:
+Drug TypePrecisionRecallF1-ScoreSupportdrugA1.001.001.007drugB1.001.001.004drugC1.000.560.719drugX0.830.950.8921drugY0.971.000.9939Confusion Matrix Visualization
+Confusion matrices were generated for both models to visually assess the accuracy of predictions.
+The Decision Tree model performed better with an accuracy of 98%.
+The Random Forest model achieved 94% accuracy, making it suitable for generalization while maintaining high performance.
+Both models demonstrated high effectiveness in solving the multiclass classification problem.
+
+
