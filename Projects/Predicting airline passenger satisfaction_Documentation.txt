@@ -1,0 +1,32 @@
+﻿Predicting Airline Passenger Satisfaction
+This project was developed to predict passenger satisfaction based on feedback from flights in the United States. Various algorithms were tested during the project, achieving high accuracy. The primary goal of this project is to reinforce knowledge by applying machine learning techniques and addressing real-world problems. Passenger satisfaction levels (e.g., satisfied or dissatisfied) depend on various factors. This project enables users to predict passenger satisfaction in advance, providing valuable insights for improving service quality.
+The project was implemented using Python programming language, utilizing the following libraries:
+·  numpy: For mathematical and statistical computations.
+·  pandas: For data manipulation and analysis.
+·  scikit-learn (sklearn): For machine learning algorithms and metrics.
+·  lightgbm: For efficient and fast classification modeling.Ma'lumotlar AQShdagi parvozlar uchun yo‘lovchilar fikr-mulohazalaridan iborat.
+
+The dataset consists of feedback from passengers on flights within the United States:
+·  Passenger Information: Age, gender, and customer type.
+·  Service Quality: Seat comfort, food quality, flight duration.
+·  Flight Information: Distance, departure time, travel class.
+·  Target Variable: Passenger satisfaction (Satisfied or Dissatisfied).
+
+Data Preparation
+1. Encoding Categorical Data:
+Categorical variables were transformed into numerical representations using OrdinalEncoder.
+2. Standardizing Numerical Data:
+Numerical features were standardized using StandardScaler.
+3. Automated Preprocessing:
+Data preprocessing was automated using Pipeline and ColumnTransformer.
+Algorithms Used and Results
+1. Random Forest Classifier
+· Accuracy: 96.29%.
+· This model identified feature importance effectively and achieved high accuracy.
+2. Cross Validation (cross_val_score)
+· Mean Accuracy: 94.83%.
+· Cross-validation was used to test the model's overall stability and robustness.
+3. Voting Classifier
+· Accuracy: 99.68%.
+· This combined the strengths of the Random Forest Classifier and LGBMClassifier, resulting in maximum accuracy.
+
