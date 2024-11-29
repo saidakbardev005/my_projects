@@ -1,0 +1,51 @@
+﻿Customer Churn Prediction Using Classification Algorithms
+Project Objective
+Customer churn prediction is one of the most common challenges in business. It involves identifying whether a customer will discontinue using a product or service. If a business owner can predict a customer's likelihood of leaving, they can take measures to retain the customer and change their decision.
+In this project, the data of online store customers was analyzed to predict the likelihood of customer retention or churn. The primary goal was to study and implement classification algorithms in practical applications.
+Dataset Description
+The dataset includes the following information about customers:
+· Demographic information
+· Purchase habits
+· Spending levels
+· Service usage frequency and other metrics
+The target variable is whether the customer stays or leaves (1 - stays, 0 - leaves).
+Libraries and Tools Used
+The project was implemented in Python, using the following libraries and tools:
+1. pandas: For data manipulation and analysis.
+2. numpy: For mathematical and statistical computations.
+3. matplotlib and seaborn: For data visualization.
+4. scikit-learn (sklearn):
+o StandardScaler: To standardize the features.
+o train_test_split: To split data into training and test sets.
+o LogisticRegression, DecisionTreeClassifier, RandomForestClassifier, SVC: Classification algorithms.
+o classification_report, accuracy_score, confusion_matrix: For model evaluation.
+5. XGBoost: To build a classifier using the XGBoost algorithm.
+6. Pipeline: To streamline classification processes.
+Model Building and Results
+Various classification algorithms were applied, and their accuracy scores were compared as follows:
+1. Logistic Regression
+· Model Accuracy: 87.94%
+· Logistic Regression is a simple and efficient algorithm for basic prediction tasks.
+2. Support Vector Machines (SVM)
+· Model Accuracy: 86.36%
+· While SVM achieves high accuracy, it requires more resources for large datasets.
+3. Decision Tree
+· Model Accuracy: 95.85%
+· A simple, interpretable model that is highly useful for decision-making based on customer behavior.
+4. Random Forest
+· Model Accuracy: 94.17%
+· An ensemble model based on decision trees, providing high accuracy and robustness.
+5. XGBoost
+· Model Accuracy: 94.36%
+· A powerful ensemble model that performs efficiently on large datasets.
+Evaluation Metrics
+The performance of the models was evaluated using the following metrics:
+1. Precision: The percentage of correctly predicted positive outcomes.
+2. Recall: The proportion of actual positive cases correctly identified.
+3. F1-Score: The harmonic mean of precision and recall.
+4. Accuracy: The proportion of correctly predicted outcomes overall.
+Conclusion
+· The Decision Tree algorithm achieved the highest accuracy of 95.85%, making it the most effective model for predicting customer churn.
+· Both Random Forest and XGBoost also performed well, providing high accuracy and generalization capabilities.
+· While Logistic Regression and SVM showed slightly lower accuracy, they are suitable for quick analysis and simpler datasets.
+
