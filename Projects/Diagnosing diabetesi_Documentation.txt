@@ -1,0 +1,51 @@
+﻿Diabetes Prediction Using Classification Algorithms
+This project was undertaken to study and apply classification algorithms to predict the presence of diabetes based on diagnostic measurements. The dataset used in this project was sourced from the National Institute of Diabetes and Digestive and Kidney Diseases in India, containing data about women aged 21 years and older.
+Dataset Description
+The dataset comprises the following features:
+1. Pregnancies: Number of pregnancies.
+2. Glucose: Glucose test results.
+3. BloodPressure: Diastolic blood pressure (mm Hg).
+4. SkinThickness: Thickness of the triceps skin fold (mm).
+5. Insulin: 2-hour serum insulin (mu U/ml).
+6. BMI: Body mass index (weight (kg) / height (m)²).
+7. DiabetesPedigreeFunction: Diabetes pedigree function (genetic factor).
+8. Age: Age of the patient (years).
+9. Outcome: Diagnosis result (0 - No diabetes, 1 - Diabetes).
+Objective
+The primary goal of this project was to build a model using the KNeighborsClassifier algorithm to predict the presence of diabetes. The focus was on understanding, testing, and optimizing the classification algorithm.
+Technologies and Libraries Used
+The following libraries and tools in Python were used:
+· numpy: For mathematical and statistical computations.
+· pandas: For data manipulation and analysis.
+· matplotlib and seaborn: For data visualization.
+· sklearn.preprocessing.StandardScaler: For feature standardization.
+· sklearn.model_selection.train_test_split: For splitting the dataset into training and testing sets.
+· sklearn.neighbors.KNeighborsClassifier: For applying the K-Nearest Neighbors algorithm.
+· sklearn.metrics: For evaluating model performance.
+· sklearn.model_selection.GridSearchCV: For hyperparameter optimization.
+Ma’lumotlar Tahlili va Tayyorlash
+· Ma’lumotlar to‘plamida o‘simta turi bilan bog‘liq raqamli va kategoriyali xususiyatlar mavjud edi.
+· LabelEncoder yordamida diagnosis ustunidagi M va B qiymatlari raqamli formatga aylantirildi.
+· StandardScaler yordamida barcha xususiyatlar standartlashtirildi.
+· Ma’lumotlar 80:20 nisbatida o‘quv va test to‘plamlariga ajratildi.
+Model Development and Evaluation
+1. KNN Algorithm
+· The model was built using the KNeighborsClassifier, with the initial value of k = 15.
+· The evaluation metrics of the model are as follows:
+o Jaccard Score: 0.5454
+o Precision: 0.7659
+o Recall: 0.6545
+o F1-Score: 0.7058
+o Accuracy: 80.52%
+2. Finding the Optimal Value of K
+· Using a for loop, the value of k = 15 was found to provide the best results.
+· With GridSearchCV, the value of k = 17 was identified to achieve the lowest error rate.
+This project successfully demonstrated the prediction of diabetes presence using the KNN algorithm. The following outcomes were observed:
+· The model performed best with k = 17, improving overall efficiency.
+· Metrics such as Precision (0.7659), Recall (0.6545), F1-Score (0.7058), and Accuracy (80.52%) validate the effectiveness of the model.
+
+
+
+
+
+
