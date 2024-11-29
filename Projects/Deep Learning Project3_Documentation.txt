@@ -1,0 +1,37 @@
+Project: Sentiment Analysis on IMDb Reviews (Natural Language Processing - NLP)
+Objective
+This project focuses on Natural Language Processing (NLP) technology, with the primary goal of classifying IMDb Review dataset comments as positive or negative. Throughout this project, deep learning algorithms were explored and applied to text data.
+Dataset
+The project used the IMDb Review Dataset, which includes the following:
+* Training Set: Used to train the model.
+* Test Set: Used to evaluate the performance of the model.
+Libraries Used
+1. torch: For building and training neural networks.
+2. fastai: For preparing text data and simplifying model training.
+3. fastai.text.all: For working with text and creating classification models.
+Process
+1. Data Loading:
+o The data was automatically downloaded using untar_data and split into training and test sets.
+2. Creating DataLoader:
+o TextDataLoaders was used to load text data and prepare it with corresponding labels.
+o Reviews were labeled as positive or negative.
+3. Model Building and Training:
+o The AWD_LSTM architecture was used for the model.
+o Dropout Regularization (drop_mult=0.5) was applied to reduce overfitting.
+o The model was trained for 4 epochs with a learning rate of 0.01 through fine-tuning.
+4. Prediction:
+o The model takes an input text and predicts the sentiment. For example:
+learn.predict("I hate that movie")
+Output: "negative"
+Results
+1. Model Performance:
+o The model showed good accuracy on the test set, evaluated using the accuracy metric.
+2. Prediction Example:
+o Input: "I hate that movie"
+o Output: "negative"
+The model correctly classified the review as negative.
+Key Takeaways
+1. Model Training: The AWD_LSTM architecture was effective for text classification tasks.
+2. Sentiment Analysis: The model demonstrated good performance in detecting positive and negative sentiments in movie reviews.
+3. Practical Application: This project lays the foundation for analyzing product reviews or social media sentiments in other applications.
+
