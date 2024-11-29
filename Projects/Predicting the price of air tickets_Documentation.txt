@@ -1,0 +1,34 @@
+﻿Flight Ticket Price Prediction Using Artificial Intelligence
+This project is designed to predict flight ticket prices for flights in India. The main objective of this project is to enhance knowledge and skills by applying machine learning techniques to solve real-world problems. Flight ticket prices vary based on several factors, such as departure time, destination, airline, etc. This project aims to provide users with the ability to predict ticket prices in advance.
+Technologies and Libraries Used:
+The project is implemented using the Python programming language and several of its libraries:
+· numpy: For mathematical computations.
+· pandas: For data analysis and manipulation.
+· matplotlib and seaborn: For data visualization.
+· sklearn (scikit-learn): For machine learning algorithms.
+Dataset:
+The project utilizes a dataset containing flight ticket price information for flights in India. The dataset includes the following features:
+· Departure Time
+· Arrival Time
+· Airline Name
+· Departure and Arrival Airports
+· Distance
+· Passenger Class
+· Ticket Price (Target variable to predict)
+Data Preparation:
+· Nominal and categorical data were encoded using OrdinalEncoder.
+· Numerical data were standardized using StandardScaler.
+· Pipeline and ColumnTransformer were used for efficient preprocessing.
+Algorithms Used
+1. Linear Regression
+o Mean Absolute Error (MAE): 4630.
+o Used as a basic regression approach for prediction.
+2. Random Forest Regressor
+o Mean Absolute Error (MAE): 582.
+o Provided good accuracy and utilized multiple decision trees for predictions.
+3. Decision Tree Classifier
+o MAE: 0.8832.
+o Accuracy: 99.95%.
+o Achieved the best results as it effectively captured the problem's characteristics.
+This project demonstrates the application of supervised learning techniques to predict flight ticket prices with high accuracy.
+
