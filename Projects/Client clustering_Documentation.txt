@@ -1,0 +1,52 @@
+﻿Customer Clustering Project: K-means Algorithm
+Project Objective
+The goal of this project is to cluster customers into different categories and better understand their behaviors and needs based on these categories. The primary objective is to learn and apply the K-means algorithm in practice.
+Libraries Used
+The following libraries and tools were used in this project:
+1. pandas: For data manipulation and analysis.
+2. numpy: For mathematical and statistical calculations.
+3. sklearn.cluster.KMeans: To apply the K-means clustering algorithm.
+4. matplotlib: For data visualization.
+Process
+1. Data Cleaning and Preprocessing
+o Data Cleaning: Unnecessary columns and values were removed from the dataset.
+o Normalization: To prepare the data for the K-means algorithm, all values were scaled to the same range.
+2. Applying the K-means Algorithm
+o Model Setup: The K-means algorithm was used to cluster customers into a set number of clusters.
+o Determining Optimal Cluster Number: The "Elbow Method" was used, and a graph was generated to identify the optimal number of clusters.
+3. Storing Predictions and Grouping
+o The cluster predictions made by the model were added to the dataset.
+o The characteristics of each cluster were analyzed to identify their main attributes.
+Results and Analysis
+The K-means algorithm divided the customers into the following three clusters:
+Cluster Descriptions:
+1. Cluster 0:
+o Features: 
+§ Older customers.
+§ Long-term experience.
+§ High income.
+o Conclusion: These customers are the most valuable for the business as they generate significant revenue and may remain loyal over the long term.
+2. Cluster 1:
+o Features: 
+§ Younger customers.
+§ Less experience.
+§ Low income.
+o Conclusion: These customers are likely new buyers, and strategies to attract and retain them could increase future revenue.
+3. Cluster 2:
+o Features: 
+§ Middle-aged customers.
+§ 7+ years of experience.
+§ Low income.
+o Conclusion: These customers are experienced, but their income is low. Special strategies aimed at increasing their loyalty could be beneficial.
+Visualization
+Cluster results were presented using the following visualizations:
+2D Cluster Visualization:
+· The clustering of customers based on two main features was shown in a two-dimensional graph.
+· This visualization helped clearly distinguish similarities and differences between the clusters.
+3D Cluster Visualization:
+· Customer clusters were represented in a three-dimensional graph to illustrate the complex relationships between features.
+· The 3D visualization provided a clearer analysis of the positioning of each cluster and the distances between them.
+Cluster Comparison:
+· The key characteristics of each cluster were presented in comparative tables and charts.
+· This comparison helped in understanding the differences in features such as age, experience, and income across the clusters.
+
