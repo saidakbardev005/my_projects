@@ -1,0 +1,34 @@
+Project: Identifying Cats Using Artificial Neural Networks
+Objective
+This project was undertaken to enhance knowledge of Deep Learning techniques. The primary goal is to create a model that can identify cats in images using artificial neural networks. The model is based on transfer learning techniques, leveraging the power of pre-trained models.
+About the Model
+The project uses the pre-trained ResNet34 model. This model, trained on approximately 1.3 million images, demonstrates high accuracy in image recognition tasks.
+Dataset
+The model was trained using the Oxford-IIIT Pet Dataset, which includes:
+* 7,349 images of cats and dogs.
+* Correctly labeled images for training.
+Libraries Used
+The following Python libraries were utilized in this project:
+1. torch - For building and deploying artificial neural networks.
+2. fastai - To simplify the process of model training and analysis.
+3. ipywidgets - For creating interactive user interface elements.
+Processes
+1. Downloading and Preparing the Dataset
+o The Oxford-IIIT Pet Dataset was downloaded automatically.
+o A labeling function (label_func) was created to classify cats and dogs based on the first letter of the image filename:
+* If the first letter is uppercase, it represents a cat.
+* If the first letter is lowercase, it represents a dog.
+2. Creating Data Loaders
+o All images were resized to 224x224 pixels to ensure uniformity.
+o The dataset was split into 80% training data and 20% validation data.
+3. Training the Model
+o The ResNet34 model was fine-tuned using a Convolutional Neural Network (CNN).
+o The model was trained for 2 epochs, improving its accuracy with fine-tuning.
+4. Uploading Files and Making Predictions
+o Using ipywidgets FileUpload, users can upload an image.
+o The model accepts the uploaded image and predicts whether it is a cat or a dog.
+o The prediction confidence is displayed as a percentage.
+Results
+* The model accurately identifies whether the uploaded image contains a cat or a dog.
+* Each prediction includes a confidence score, presented as a percentage.
+
