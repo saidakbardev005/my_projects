@@ -1,0 +1,30 @@
+﻿Nonlinear Regression: Polynomial Regression and Logistic Regression
+This project aimed to explore the application of nonlinear algorithms in cases where linear regression models fail to accurately fit the data. The focus was on analyzing the Gross Domestic Product (GDP) growth data of the People's Republic of China over various years.The dataset included two columns:Year: The year when the GDP was measured.Value: The corresponding GDP value.
+The primary objective was to build a model capable of predicting future GDP values based on the given data.
+Technical Details of the Project
+The project was implemented in Python using the following libraries and tools:
+· numpy: For mathematical calculations.
+· pandas: For data manipulation and analysis.
+· matplotlib: For plotting graphs and visualizing data.
+· sklearn.linear_model.LinearRegression: For creating a basic linear regression model.
+· sklearn.preprocessing.PolynomialFeatures: For generating features for polynomial regression.
+· scipy.optimize.curve_fit: For fitting a logistic regression function to the data.
+· sklearn.metrics.mean_absolute_error: For evaluating the error in predictions.
+Algorithms Used and Results
+1. Linear Regression
+Linear regression was initially used for analysis.
+· Mean Absolute Error (MAE): 0.1266.
+· The high error indicates that this model was ineffective for the given dataset, leading to the exploration of nonlinear methods.
+2. Polynomial Regression
+Polynomial regression was employed using the PolynomialFeatures algorithm to improve accuracy.
+· MAE: 0.0093.
+· This approach significantly outperformed linear regression by fitting the data much more effectively.
+3. Logistic Regression (Curve Fitting)
+The curve_fit function was used to apply logistic regression.
+· MAE: 0.0305.
+· While this method also yielded accurate results, it was slightly less precise compared to polynomial regression.
+Conclusions
+This project demonstrated the application of nonlinear regression models to real-world data. The findings revealed:
+· Polynomial Regression achieved the highest accuracy and best fit for the dataset.
+· Logistic Regression proved to be a viable alternative with reasonable accuracy.
+· Linear Regression was unsuitable for this dataset due to its high error rate.
