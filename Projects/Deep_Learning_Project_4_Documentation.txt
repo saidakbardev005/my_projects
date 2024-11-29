@@ -1,0 +1,45 @@
+Project: Salary Prediction and Loan Decision Using Tabular Model
+Objective
+This project aims to predict whether an individual's annual salary is below or above 50k using a Tabular Model. Decisions are made based on personal and professional characteristics of the individual. Additionally, this model can assist in making decisions regarding loan approvals.
+Dataset
+The dataset used in this project is the Adult Income Dataset, which contains the following information:
+* Personal attributes such as age, education level, occupation, marital status, and others.
+* The target column: Salary - this column indicates whether the individual's annual income is below 50k (class 0) or equal to/above 50k (class 1).
+Libraries Used
+The following libraries were used in the project:
+1. pandas: For reading and manipulating data.
+2. fastai: A deep learning library used for working with tabular data.
+Process
+1. Data Loading:
+o Data was automatically downloaded using untar_data and stored in a CSV file.
+2. Creating DataLoaders:
+o The TabularDataLoaders class was used to load data from the CSV file.
+o Data was organized into categorical and continuous variables:
+* Categorical variables: workclass, education, marital-status, occupation, relationship, race, sex.
+* Continuous variables: age, fnlwgt, education-num, capital-gain, capital-loss, hours-per-week.
+o Preprocessing steps like Categorify, FillMissing, and Normalize were applied to prepare the data.
+3. Training the Model:
+o A model was built using the Tabular Learner class.
+o The model was trained using the accuracy metric.
+o The fit_one_cycle method was used to train the model for 4 epochs.
+4. Testing the Model:
+o To test the model, the row df.iloc[4] from the dataset was used, and the predicted result (0, tensor([0.8206, 0.1794])) was obtained.
+o This result indicates that if the annual salary is less than 50k, the model classifies it as class 0 (negative), and if the salary is 50k or more, it classifies it as class 1 (positive).
+5. Displaying Results:
+o The model's results were visualized using the learn.show_results method.
+Results
+1. Model Performance:
+o The model accurately predicted whether the salary is below or above 50k.
+2. Example Prediction:
+o Input: df.iloc[4] data row.
+o Output: 0 (Salary below 50k)
+3. Loan Decisions:
+o The model can be used to make decisions regarding loan approvals based on the provided data.
+Conclusions
+1. Model Training:
+o The model proved to be effective in accurately predicting annual salaries and can assist in making data-driven decisions.
+2. Loan Decision Making:
+o This model can be used to assist in making decisions about who to approve loans for, based on the data provided.
+3. Practical Applications:
+o The model can be extended to other business domains, such as making decisions about customers, creating marketing strategies, and more.
+
