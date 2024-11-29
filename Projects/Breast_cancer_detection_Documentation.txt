@@ -1,0 +1,50 @@
+﻿Breast Cancer Detection: Classification Project Using Artificial Intelligence
+This project was undertaken to study and apply classification algorithms. The dataset used was sourced from Kaggle and contains information related to breast cancer tumors. The diagnosis column in the dataset indicates whether the tumor is cancerous (M - malignant) or non-cancerous (B - benign). The primary objective of this project was to use artificial intelligence to detect breast cancer and optimize the model.
+Technical Details
+The project was implemented using Python and the following libraries:
+· pandas: For data manipulation and analysis.
+· numpy: For mathematical and statistical computations.
+· seaborn & matplotlib: For plotting graphs and data visualization.
+· sklearn.preprocessing:
+o LabelEncoder: To convert categorical data into numerical format.
+o StandardScaler: To standardize features.
+· sklearn.model_selection:
+o train_test_split: To split data into training and testing sets.
+o GridSearchCV: For model parameter optimization.
+o cross_val_predict: To evaluate results using cross-validation.
+· sklearn.neighbors.KNeighborsClassifier: For implementing the KNN classification algorithm.
+· sklearn.metrics: For evaluating the performance of the classification model.
+Data Analysis and Preparation
+· The dataset contained numerical and categorical features related to tumor types.
+· LabelEncoder was used to encode the diagnosis column (M and B) into numeric values.
+· StandardScaler was applied to standardize all features.
+· The data was split into training and testing sets in an 80:20 ratio.
+Model Training and Evaluation
+1. KNN Algorithm
+· The KNN algorithm was trained with a parameter of k = 5.
+· Model evaluation results:
+o Jaccard Index: 0.8958
+o Confusion Matrix: [[66,  0],  [ 5, 43]]
+o Precision: 1.0
+o Recall: 0.8958
+o F1-Score: 0.9451
+o Accuracy: 95.61%
+2. Cross-Validation
+· Cross-validation was performed with cv = 5. Results:
+                     precision   recall   f1-score   support  
+   0                   0.96       0.98      0.97       357  
+   1                   0.97       0.93      0.95       212  
+   Accuracy                       0.96       569  
+3. Hyperparameter Optimization
+· Two methods were used to determine the best value for k:
+o For loop: By evaluating the model for different values of k, the optimal value was found to be k = 5 or 7.
+o GridSearchCV: Parameter optimization suggested that k = 9 provided the best performance with the lowest error rate.
+Using the KNN algorithm, a high accuracy in detecting breast cancer was achieved.
+The model performed best with k = 9.
+Performance metrics like Precision, Recall, F1-Score, and others demonstrated the model's effectiveness:
+Precision: 1.0 (Accurately classified cancerous tumors.)
+· Accuracy: 95.61% (Overall accuracy of the model.)
+· F1-Score: 0.9451 (Balance between precision and recall.)
+The Confusion Matrix results confirmed the model's ability to distinguish between healthy and cancerous tumors effectively.
+
+
