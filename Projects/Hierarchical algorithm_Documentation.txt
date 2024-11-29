@@ -1,0 +1,39 @@
+﻿Hierarchical Clustering for Vehicle Classification Project
+Project Objective
+The main objective of this project is to learn and implement the hierarchical clustering algorithm. Unlike other algorithms, hierarchical clustering does not require the number of clusters to be specified beforehand. Instead, it provides results in the form of a dendrogram, which visually represents clustering outcomes.
+Libraries Used
+The project utilized the following Python libraries:
+1. numpy: For mathematical computations.
+2. pandas: For data management and analysis.
+3. matplotlib.pyplot: For data visualization.
+4. sklearn.preprocessing.MinMaxScaler: For data normalization.
+5. scipy.cluster.hierarchy: For hierarchical clustering and dendrogram creation.
+6. scikit-learn (AgglomerativeClustering): For implementing hierarchical clustering using scikit-learn.
+Project Workflow
+1. Data Preparation
+o The dataset was cleaned, and unnecessary values were removed.
+o Data was normalized using the MinMaxScaler to prepare it for clustering.
+2. Constructing the Distance Matrix
+o Pairwise distances between data points were calculated using scipy.spatial.distance_matrix.
+o A distance matrix D was created as a result.
+3. Hierarchical Clustering
+o The hierarchical clustering algorithm was implemented using the Scipy library.
+o A dendrogram was plotted to visualize clustering and determine the number of clusters.
+o Using fcluster, the dendrogram was cut at a specific level to select the desired number of clusters.
+4. Hierarchical Clustering with Scikit-learn
+o The clustering process was repeated using AgglomerativeClustering from scikit-learn.
+o Results from Scipy and scikit-learn implementations were compared, confirming consistency.
+Dendrogram
+· The dendrogram represents the relationships between data points. It is a powerful tool for determining the number of clusters and visually analyzing cluster relationships.
+Cluster Descriptions
+Hierarchical clustering results revealed the following clusters:
+1. Cluster 0:
+o High-performance vehicles equipped with modern technology.
+2. Cluster 1:
+o Medium-performance, economically efficient vehicles.
+3. Cluster 2:
+o Low-performance vehicles suitable for budget-conscious users.
+Results
+· The hierarchical clustering results obtained using Scipy and scikit-learn were compared.
+· The consistency between both methods confirmed the algorithm's effectiveness and reliability.
+
